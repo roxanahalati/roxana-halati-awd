@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PageContainer = styled.div`
-  height: calc(100vh - 78px);
+  height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,14 +48,15 @@ const Contact = ({ isMobileMenuOpen }) => {
       <SectionTitle>Contact</SectionTitle>
       <ColumnsContainer>
         <Column>
-          <p>Placeholder text for the first column</p>
+          <p>Email</p>
+          <p><a href="mailto:roxana.halati@ubbcluj.ro">roxana.halati@ubbcluj.ro</a></p>
+          <p>*Please write from your @stud.ubbcluj.ro address</p>
         </Column>
         <Column>
-          <p>Placeholder text for the second column</p>
+          <p>Office</p>
+          <p>Office 303, 3rd floor, Teodor Mihali Street no.58-60 (FSEGA building), 400591, Cluj Napoca, Romania</p>
         </Column>
-        <Column>
-          <p>Placeholder text for the third column</p>
-        </Column>
+      
       </ColumnsContainer>
     </PageContainer>
   );

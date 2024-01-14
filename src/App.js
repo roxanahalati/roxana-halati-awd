@@ -6,7 +6,7 @@ import Teaching from './Teaching';
 import Contact from './Contact';
 import Menu from './components/Menu';
 import Footer from './components/Footer';
-import AboutMe from './PersonalInfo';
+import AboutMe from './AboutMe';
 function App() {
 
   return (

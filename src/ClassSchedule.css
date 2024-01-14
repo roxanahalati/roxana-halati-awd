@@ -1,0 +1,19 @@
+.table-container {
+    text-align: center;
+}
+
+.class-schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.class-schedule-table th,
+.class-schedule-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.class-schedule-table th {
+    background-color: #f2f2f2;
+}
