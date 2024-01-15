@@ -1,0 +1,32 @@
+.menuContainer {
+    background-color: #5A1647;
+    height: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 768px) {
+    .menuContainer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menuContainer p {
+      display: none;
+    }
+  }
+
+  .menuIcon {
+    cursor: pointer;
+    color: #FFF;
+  }
+  
+  @media (min-width: 769px) {
+    .menuIcon {
+      display: none; /* Hide the name of the site on desktop */
+    }
+  }
+
+ 

@@ -2,7 +2,7 @@ import React from 'react';
 import './ClassSchedule.css'
 const ClassSchedule = () => {
     return (
-        <div className="table-container">
+        <div lang="ro" className="table-container">
             <h2>Class Schedule</h2>
             <table className="class-schedule-table">
                 <thead>

@@ -1,0 +1,104 @@
+.HomePageContainer {
+  min-height: calc(100vh - 78px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.HomeContainer {
+  display: grid;
+  grid-template-columns: 30% 50%;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .HomeContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.InfoContainer {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .InfoContainer {
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+.TextContainer {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .TextContainer {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+  
+  .RoundedImage {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .NameTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .BulletPoint {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .Paragraph {
+    font-size: 16px;
+  }
+
+  .important-text {
+    font-size: 16px;
+    font-weight: 500
+  }
+
+  .flex-center {
+    display: flex;
+    align-items: center
+  }
+
+  .detail1 {
+    font-size: 12px;
+    margin-top: -5px;
+  }
+
+  .detail2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: -3px
+  }
+
+  .detail3 {
+    font-size: 14px;
+    margin-top: -3px
+  }
+
+  .salutation {
+    font-size: 22px;
+    font-weight: 700;
+    color: #92073E
+  }
+  
+  

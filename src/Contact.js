@@ -1,64 +1,30 @@
-// Contact.js
 import React from 'react';
-import styled from 'styled-components';
-
-const PageContainer = styled.div`
-  height: calc(100vh - 100px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: ${({ isMobileMenuOpen }) => (isMobileMenuOpen ? 'hidden' : 'auto')}; /* Prevent scrolling past footer on small screens */
-`;
-
-const SectionTitle = styled.h2`
-  font-size: 24px;
-  margin-bottom: 20px;
-`;
-
-const ColumnsContainer = styled.div`
-  display: flex;
-  flex-direction: column; /* Display columns in a column on small screens */
-  gap: 20px; /* Add space between columns */
-  height: 50%; /* Set height to 50% of the screen height */
-  width: 100%; /* Take full width on small screens */
-  align-items: center; /* Center align columns horizontally */
-
-  @media screen and (min-width: 768px) {
-    flex-direction: row; /* Display columns in a row on larger screens */
-    justify-content: center; /* Center align columns horizontally on larger screens */
-  }
-`;
-
-const Column = styled.div`
-  flex: 1; /* Adjust to make the columns take less width on small screens */
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 300px; /* Set a maximum width for the columns */
-
-  @media screen and (max-width: 768px) {
-    width: 100%; /* Take full width on smaller screens */
-  }
-`;
+import EmailIcon from './assets/email_black.svg'
+import Office from './assets/office.svg'
+import './Contact.css'
 
 const Contact = ({ isMobileMenuOpen }) => {
   return (
-    <PageContainer isMobileMenuOpen={isMobileMenuOpen}>
-      <SectionTitle>Contact</SectionTitle>
-      <ColumnsContainer>
-        <Column>
-          <p>Email</p>
+    <div className='PageContainer' isMobileMenuOpen={isMobileMenuOpen}>
+      <h2 className='SectionTitle'>Contact</h2>
+      <div className="ColumnsContainer">
+        <div className="Column">
+          <div className='flex-div'>
+          <img src={EmailIcon} />
+          <p className="contact-big-text">Email</p>
+          </div>
           <p><a href="mailto:roxana.halati@ubbcluj.ro">roxana.halati@ubbcluj.ro</a></p>
-          <p>*Please write from your @stud.ubbcluj.ro address</p>
-        </Column>
-        <Column>
-          <p>Office</p>
+          <p className="contact-small-text">*Please write from your @stud.ubbcluj.ro address</p>
+        </div>
+        <div className="Column">
+          <div className='flex-div'>
+          <img src={Office} />
+          <p className="contact-big-text">Office</p>
+          </div>
           <p>Office 303, 3rd floor, Teodor Mihali Street no.58-60 (FSEGA building), 400591, Cluj Napoca, Romania</p>
-        </Column>
-      
-      </ColumnsContainer>
-    </PageContainer>
+        </div>
+      </div>
+    </div>
   );
 };
 

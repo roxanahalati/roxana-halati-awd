@@ -1,0 +1,69 @@
+.TeachingPageContainer {
+    height: calc(100vh - 78px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+  }
+  
+  .TeachingSectionTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .TeachingColumnsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 80%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .TeachingColumnsContainer {
+      flex-direction: row;
+    }
+  }
+  
+  .TeachingColumn {
+    flex: 1;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    max-height: 500px;
+    overflow-y: auto;
+  
+   
+  }
+
+  @media screen and (max-width: 768px) {
+    .TeachingColumn{
+    width: 90%;
+    }
+  }
+
+  .TeachingProgrammingTitle {
+    font-weight: 700;
+    font-size: 22px;
+    margin-left: 4px;
+  }
+
+  .flex-div {
+    display: flex;
+  }
+
+  .bold-colored {
+    font-weight: 800;
+    color: #92073E
+  }
+
+  .bold-colored-big {
+    font-weight: 800;
+    color: #92073E;
+    font-size: 20px;
+  }
+  

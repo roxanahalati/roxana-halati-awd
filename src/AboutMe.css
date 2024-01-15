@@ -1,0 +1,74 @@
+.AboutPageContainer {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; 
+  }
+  
+  .AboutSectionTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .AboutColumnsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 80vh; 
+    width: 90%;
+    margin-top: 20px;
+    overflow: auto; 
+  }
+  
+  @media screen and (min-width: 768px) {
+    .AboutColumnsContainer {
+      flex-direction: row;
+    }
+  }
+  
+  .AboutColumn {
+    flex: 1;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .AboutColumn:hover {
+    background-color: #92073e;
+    color: #fff;
+  }
+  
+  .AboutBulletPoint {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .special-text {
+    font-size: 14px; 
+    margin-top: -8px
+  }
+
+  .bold-text {
+    font-weight: bold;
+  }
+  
+  .flex-dis {
+    display: flex
+  }
+
+  .title-text {
+    display: flex;
+    font-weight: bold; 
+    flex-direction: row;
+    align-items: center
+  }
+
+  .section-title{
+    margin-left: 8px;
+    font-size:20px;
+    font-weight: bold;
+  }
+  

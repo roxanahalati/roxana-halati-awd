@@ -1,0 +1,57 @@
+.contact-small-text {
+  font-size: 12px;
+}
+
+.contact-big-text{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.PageContainer {
+    height: calc(100vh - 78px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+  }
+  
+  .PageContainer.isMobileMenuOpen {
+    overflow: auto;
+  }
+  
+  .SectionTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .ColumnsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .ColumnsContainer {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  
+  .Column {
+    flex: 1;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .Column {
+      width: 100%;
+    }
+  }
+

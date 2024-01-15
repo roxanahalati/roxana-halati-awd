@@ -1,33 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import './Menu.css'
 
-const MenuContainer = styled.div`
-  background-color: #5A1647; /* Updated background color */
-  height:40px;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: flex-start;
-
-    p {
-      display: none; /* Hide the text on small screens */
-    }
-  }
-`;
-
-const MenuIcon = styled.div`
-  cursor: pointer;
-  color: #FFF;
-
-  @media (min-width: 769px) {
-    display: none; // Hide the icon on desktop
-  }
-`;
 
 const Navigation = styled.nav`
   ul {
@@ -88,8 +63,8 @@ const Menu = () => {
   };
 
   return (
-    <MenuContainer>
-      <MenuIcon onClick={toggleMenu}>Menu</MenuIcon>
+    <div className='menuContainer'>
+      <div className='menuIcon' onClick={toggleMenu}>Menu</div>
       <p style={{color:'white', fontWeight:'700', fontSize:18, marginLeft:4}}>Assistant PhD Roxana Halați</p>
       <Navigation isOpen={isOpen}>
         <ul>
@@ -104,6 +79,15 @@ const Menu = () => {
           </li>
           <li>
             <Link
+              to="/teaching"
+              onClick={() => handleItemClick('Teaching')}
+              className={selectedItem === 'Teaching' ? 'selected' : ''}
+            >
+              Teaching
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/personal-info"
               onClick={() => handleItemClick('About Me')}
               className={selectedItem === 'About Me' ? 'selected' : ''}
@@ -113,11 +97,11 @@ const Menu = () => {
           </li>
           <li>
             <Link
-              to="/teaching"
-              onClick={() => handleItemClick('Teaching')}
-              className={selectedItem === 'Teaching' ? 'selected' : ''}
+              to="/happiness"
+              onClick={() => handleItemClick('Happiness')}
+              className={selectedItem === 'Happiness' ? 'selected' : ''}
             >
-              Teaching
+              Destressify
             </Link>
           </li>
           <li>
@@ -131,7 +115,7 @@ const Menu = () => {
           </li>
         </ul>
       </Navigation>
-    </MenuContainer >
+    </div>
   );
 };
 

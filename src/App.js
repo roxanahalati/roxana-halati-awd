@@ -7,6 +7,7 @@ import Contact from './Contact';
 import Menu from './components/Menu';
 import Footer from './components/Footer';
 import AboutMe from './AboutMe';
+import Happiness from './Happiness';
 function App() {
 
   return (
@@ -18,6 +19,10 @@ function App() {
         <Route
           path="/personal-info"
           element={<AboutMe />}
+        />
+        <Route
+          path="/happiness"
+          element={<Happiness />}
         />
         <Route path="/contact" element={<Contact />} />
       </Routes>
