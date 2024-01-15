@@ -10,7 +10,7 @@ const Teaching = ({ isMobileMenuOpen }) => {
       <div className="TeachingColumnsContainer">
         <div className="TeachingColumn">
           <div style={{ display: 'flex' }}>
-            <img src={Computer} />
+            <img src={Computer} alt="computer"/>
             <p className="TeachingProgrammingTitle">Fundamentals of Programming</p>
           </div>
 

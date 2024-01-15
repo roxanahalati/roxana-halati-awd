@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import emailIcon from './../assets/email.svg';
 import githubIcon from './../assets/github.png';
 import linkedinIcon from './../assets/li.png';

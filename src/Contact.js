@@ -10,7 +10,7 @@ const Contact = ({ isMobileMenuOpen }) => {
       <div className="ColumnsContainer">
         <div className="Column">
           <div className='flex-div'>
-          <img src={EmailIcon} />
+          <img src={EmailIcon} alt="Email" />
           <p className="contact-big-text">Email</p>
           </div>
           <p><a href="mailto:roxana.halati@ubbcluj.ro">roxana.halati@ubbcluj.ro</a></p>
@@ -18,7 +18,7 @@ const Contact = ({ isMobileMenuOpen }) => {
         </div>
         <div className="Column">
           <div className='flex-div'>
-          <img src={Office} />
+          <img src={Office} alt="Office"/>
           <p className="contact-big-text">Office</p>
           </div>
           <p>Office 303, 3rd floor, Teodor Mihali Street no.58-60 (FSEGA building), 400591, Cluj Napoca, Romania</p>

@@ -19,6 +19,7 @@ const Happiness = () => {
             src={require(`./petPictures/${image}`)}
             onClick={() => handleImageClick(image)}
             className="grid-item"
+            alt="cute pet"
           />
         ))}
       </div>
@@ -27,8 +28,8 @@ const Happiness = () => {
         <div className="modal">
           <img
             src={require(`./petPictures/${selectedImage}`)}
-            alt={`Selected Image`}
             className="full-size-image"
+            alt="cute pet"
           />
           <button onClick={() => setSelectedImage(null)}>Close</button>
         </div>

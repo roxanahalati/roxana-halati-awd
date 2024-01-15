@@ -12,7 +12,7 @@ const AboutMe = () => {
       <div className='AboutColumnsContainer'>
         <div className='AboutColumn'>
           <div className='flex-dis'>
-            <img src={EducationIcon} />
+            <img src={EducationIcon} alt="Book" />
             <p className="section-title">Education</p>
           </div>
           <div>
@@ -50,7 +50,7 @@ const AboutMe = () => {
         </div>
         <div className='AboutColumn'>
           <div className='flex-dis'>
-            <img src={TeachingIcon} />
+            <img src={TeachingIcon} alt="Book and Pen" />
             <p className="section-title">Teaching & Work</p>
           </div>
 
@@ -81,7 +81,7 @@ const AboutMe = () => {
 
         <div className='AboutColumn'>
           <div className='flex-dis'>
-            <img src={HobbyIcon} />
+            <img src={HobbyIcon} alt="Paint Brush" />
             <p className="section-title">Hobbies</p>
           </div>
 
